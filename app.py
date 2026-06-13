@@ -98,21 +98,13 @@ layer = pdk.Layer(
     line_width_min_pixels=1,
 )
 
-# Calculate map center dynamically
-if not filtered_df.empty:
-    # Pick a random hex or the first one to center the map
-    center_hex = filtered_df.iloc[0]['h3_index']
-    if hasattr(h3, 'cell_to_latlng'):
-        lat, lon = h3.cell_to_latlng(center_hex)
-    else:
-        lat, lon = h3.h3_to_geo(center_hex)
-else:
-    lat, lon = 37.7749, -122.4194 # default San Francisco
+# Set map center to show the whole map
+lat, lon = 39.8283, -98.5795 # Center of continental US
 
 view_state = pdk.ViewState(
     latitude=lat,
     longitude=lon,
-    zoom=4.5,
+    zoom=3.0,
     pitch=0
 )
 
