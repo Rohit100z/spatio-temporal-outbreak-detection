@@ -8,7 +8,14 @@ A real-time geospatial machine learning pipeline for detecting and forecasting s
 
 👉 **[View the Live Dashboard](https://diditshake.streamlit.app)**
 
-![Dashboard Screenshot](notebooks/model_evaluation_comparisons.png)
+### 🗺️ Geospatial Anomaly View
+![Dashboard Map](assets/dashboard_map.png)
+
+### 📈 Temporal Trends
+![Dashboard Trends](assets/dashboard_trends.png)
+
+### 📊 Model Evaluation
+![Model Evaluation](notebooks/model_evaluation_comparisons.png)
 
 ---
 
